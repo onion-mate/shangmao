@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> - 商Mall城</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">S-Mall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+            <div class="panel">
+                <h1 class="panel-title">关于我们</h1>
+                <div class="panel-body">
+                    <p class="info a-h-title">毕设</p><hr>
+                    <p class="info">欢迎访问线上环境 <a href="http://www.evobly.com" target="_blank">www.evobly.com</a> --> 商MALL城</p>
+                    <p class="info">项目成员：</p>
+                    <p class="info">指导老师： ———</p>
+                    <p class="info">技术选型：前端基于CommonJS+Webpack模块化方案，JQ+CSS/React+Sass，后端Maven+SSM框架。</p>
+                    <p class="info">
+                    <a href="mailto:87993507@qq.com?cc=1506658615@qq.com&subject=请填写邮件主题">联系我们</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+/*
+* @Author: Rosen
+* @Date:   2017-05-28 11:58:18
+* @Last Modified by:   Rosen
+* @Last Modified time: 2017-05-28 15:38:37
+*/
+.pg-content{
+    text-align: center;
+    color: #333;
+    -moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.pg-content .pg-item{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #aaf;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,.3);
+    transition: all 0.2s ease-in-out;
+}
+.pg-content .pg-item:hover{
+    background: #afe;
+    color: #000;
+}
+.pg-content .pg-item.disabled{
+    /* color: #000; */
+    background: none;
+    cursor: default;
+    border:none;
+    border-radius: 3px;
+}
+.pg-content .pg-item.active{
+    border:none;
+    background: none;
+    cursor: default;
+    border-radius: 3px;
+}
+.pg-content .pg-total{
+    margin-left: 10px;
+    background: none;
+    cursor: default;
+}

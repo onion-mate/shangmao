@@ -1,0 +1,33 @@
+{{#list}}
+	<p class="d-title">公告ID:{{id}}</p>
+	<p class="d-title">标题：{{name}}</p>
+	<p class="d-title">描述：{{subtitle}}</p>
+	<p class="d-title">发布者：{{username}}</p>
+	<p class="d-title">发布时间：{{updateTime}}</p>
+	<div class="detail-wrap">
+	    <div class="detail-tab-con">
+	        <ul class="tab-list">
+	            <li class="tab-item active">公告详情内容：</li>
+	        </ul>
+	    </div>
+	    <div class="detail-con">
+		    <label class="label-img">头图：</label>
+		    <img src="http://img.evobly.com/img/{{mainImage}}" class="cont-img"/>
+		    <label class="label-img">内容介绍：</label></br>
+		    <div class="contArea">{{{content}}}</div>
+	    </div>
+	</div>
+{{/list}}
+{{^list}}
+	<div class="middle sec-loading">
+		<div class="loading2 ld1"></div>
+		<div class="loading2 ld2"></div>
+		<div class="loading2 ld3"></div>
+		<div class="loading2 ld4"></div>
+		<div class="loading2 ld5"></div>
+		<div class="loading2 ld6"></div>
+		<div class="loading2 ld7"></div>
+		<div class="loading2 ld8"></div>
+	</div>
+{{/list}}
+

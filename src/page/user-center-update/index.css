@@ -1,0 +1,50 @@
+.form-line{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.form-line .label{
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}
+.form-line .input{
+	height: 25px;
+	line-height: 25px;
+	width: 200px;
+	font-size: 14px;
+	text-indent: .8em;
+}
+
+.user-info .form-line .errorSelected{
+	border-radius: 8px;
+	-moz-box-shadow:  0 0 5px 1px rgba(255,11,11,0.8);
+    -webkit-box-shadow:  0 0 5px 1px rgba(255,11,11,0.8);
+    box-shadow: 0 0 5px 1px rgba(255,11,11,0.8);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-submit{
+	position: relative;
+	top: 10px;
+	left: 225px;
+}
+.page-wrap{
+	height:580px;
+	background: #fefefe;
+}
+.content .panel
+ {
+	width: 100%;
+	height: 100%;
+}
+.content.with-nav{
+	width: 947px;
+	height: 500px;
+	background: #fefefe;
+	border-top:1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}

@@ -1,0 +1,228 @@
+/*
+* @Author: Rosen
+* @Date:   2017-05-30 16:51:30
+* @Last Modified by:   Rosen
+* @Last Modified time: 2017-06-02 11:38:22
+*/
+.page-wrap .w {
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(104, 120, 177, 0.1);
+    margin-top:30px;    
+    margin-bottom:30px; 
+    -moz-box-shadow:  0 0 15px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow:  0 0 15px 1px rgba(0,0,0,0.2);
+    box-shadow:  0 0 15px 1px rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out;
+}
+.page-wrap .w:hover{
+    background: rgba(104, 120, 177, 0.24);
+    -moz-box-shadow:  0 0 15px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow:  0 0 15px 1px rgba(0,0,0,0.6);
+    box-shadow:  0 0 15px 1px rgba(0,0,0,0.6);
+    transition: all 0.2s ease-in-out;
+}
+ .cart-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.cart-list .cart-table{
+    border-radius: 5px;
+ }
+ .cart-list .cart-table tr input[type='checkbox'] {
+    height: 20px;
+    width: 20px;
+    line-height: 53px;
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+    border-radius: none;
+    border:1px solid #ccc;
+}
+.cart-list .cart-table .tr-even{
+    background: rgba(255, 255, 255, 0.8);
+    -moz-box-shadow:  0 0 10px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow:  0 0 10px 1px rgba(0,0,0,0.2);
+    box-shadow:  0 0 10px 1px rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out;
+ }
+.cart-list .cart-table .tr-even-hover{
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.1s ease-in-out;
+    -moz-box-shadow:  0 0 10px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow:  0 0 10px 1px rgba(0,0,0,0.6);
+    box-shadow:  0 0 10px 1px rgba(0,0,0,0.6);
+ }
+ .cart-list .cart-table .tr-odd{
+    background:rgba(125, 239, 176, 0.1);
+    -moz-box-shadow:  0 0 10px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow:  0 0 10px 1px rgba(0,0,0,0.2);
+    box-shadow:  0 0 10px 1px rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out;
+ }
+ .cart-list .cart-table .tr-odd-hover{
+    background:rgba(125, 239, 220, 0.5);
+    transition: all 0.1s ease-in-out;
+    -moz-box-shadow:  0 0 10px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow:  0 0 10px 1px rgba(0,0,0,0.6);
+    box-shadow:  0 0 10px 1px rgba(0,0,0,0.6);
+ }
+/* .cart-list .cart-table tr:even:hover{
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+ }
+ .cart-list .cart-table tr:odd:hover{
+    background:rgba(255, 147, 106, 0.4);
+    transition: all 0.2s ease-in-out;
+ } */
+/* header */
+.cart-header{
+    background: #eee;
+}
+.cart-header .cart-table tr{
+    background: #fff;
+}
+.cart-header .cart-cell{
+    height: 40px;
+    line-height: 40px;
+}
+.cart-header .cart-cell input[type='checkbox'] {
+    height: 20px;
+    width: 20px;
+    line-height: 53px;
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+    border-radius: none;
+    border:1px solid #ccc;
+}
+.cart-table .cell-check{
+    width: 8%;
+    text-align: left;
+    padding-left: 20px;
+}
+.cart-table .cell-img{
+    width: 10%;
+    text-align: left;
+}
+.cart-table .cell-img .p-img{
+    margin: 10px 0;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+.cart-table .cell-info{
+    width: 35%;
+    text-align: left;
+}
+.cart-header .cell-info{
+    width: 45%;
+    padding-left: 106px;
+}
+.cart-table .cell-price{
+    width: 10%;
+    text-align: center;
+}
+.cart-table .cell-count{
+    width: 15%;
+    text-align: center;
+}
+.cart-table .cell-count .count-input{
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+    color: #333;
+}
+.cart-table .cell-count .count-btn{
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+    -moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.cart-table .cell-total{
+    width: 14%;
+    text-align: center;
+    font-weight: bold;
+}
+.cart-table .cell-opera{
+    width: 10%;
+    text-align: center;
+}
+
+/* footer */
+.cart-footer{
+    position: relative;
+    line-height: 50px;
+    background: #fff;
+    overflow: hidden;
+}
+.cart-footer .select-con{
+    float: left;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 53px;
+}
+.cart-footer .select-con input[type='checkbox'] {
+    height: 20px;
+    width: 20px;
+    line-height: 53px;
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+    border-radius: none;
+    border:1px solid #ccc;
+}
+.cart-footer .delete-con{
+    float: left;
+    margin-left: 20px;
+}
+.cart-footer .submit-con{
+    float: right;
+    font-size: 16px;
+    line-height: 53px;
+}
+.cart-footer .submit-con .total-price-title{
+    font-weight: bold;
+    position: relative;
+    left: -10px;
+}
+.cart-footer .submit-con .submit-total{
+    color: #c60023;
+    font-weight: bold;
+    margin-right: 30px;
+    position: relative;
+    left: -20px;
+    /* vertical-align: middle; */
+}
+.cart-footer .submit-con .btn-submit{
+    position: relative;
+    right: 15px;
+    width: 65px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+/* 错误信息 */
+.err-tip{
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
+}

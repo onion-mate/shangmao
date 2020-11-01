@@ -1,0 +1,146 @@
+.page-wrap .w{
+	padding-bottom: 150px 0;
+	margin: 30px 0;
+	background: #fff;
+}
+.fl{float: left;}
+.fr{float: right;}
+
+/*错误提示*/
+.post-message .error-item{
+	height: 30px;
+	line-height: 30px;
+	width:auto; 
+	text-indent: 2em;
+	position: absolute;
+	padding: 0 10px;
+	bottom: 55px;
+	right: 160px;
+	border:1px solid red;
+	color: red;
+	border-radius: 5px;
+	background: #fde9e9;
+	display: none;
+}
+.post-message .error-icon{
+	position: absolute;
+	left:-10px;
+	top: 50%;
+	font-size: 14px;
+	margin-top: -7px;
+}
+
+.panel {
+    padding: 30px;
+    margin: 30px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+.panel .panel-body{
+	height: 1050px;
+}
+.panel .panel-body .info{
+	padding:5px 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-indent: 1.5em;	
+}
+.panel .panel-body .info a{
+	text-decoration: none;
+}
+.panel .panel-body .msg-item{
+	width:980px;
+	height:180px;
+	margin: 20px 0;
+	border-radius: 10px;
+	transition: .2s;
+	border-bottom: 2px solid #e5e9ef;
+	border-left: 1px solid #e5e9ef;
+	border-top: 1px solid #e5e9ef;
+	border-right: 1px solid #e5e9ef;
+	/*border: 1px solid #e5e9ef;*/
+}
+.panel .panel-body .msg-item:hover{
+	box-shadow: 0 2px 5px #ccc;
+	color: #0057c3f7;
+}
+.panel .panel-body .msg-item .top{
+	height:35px;
+	width: 100%;
+	line-height: 35px;
+	border-radius: inherit;
+	border-bottom: 2px solid red;
+	float: left;
+	background: #eee;
+}
+.msg-item .top .m-left{text-indent: 1.2em;font-weight: bold;}
+.msg-item .top .m-right{margin-right: 20px;font-weight: bold;}
+.msg-item .content{
+	padding: 10px 10px;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/*发表留言*/
+.post-title{
+	width: 200px;
+	display: block;
+	margin:0 auto;
+	padding: 10px 0;
+	text-align:center;
+}
+.post-title:before {
+	content: '';
+	width: 50px;
+	height: 2px;
+	position: relative;
+	top: 18px;
+	left: -12px;
+	display: block;
+	background-color: #948d8d;
+}
+.post-title:after {
+	content: '';
+	width: 50px;
+	height: 2px;
+	position: relative;
+	top: -19px;
+	right:-160px;
+	display: block;
+	background-color: #948d8d;
+}
+.post-message{
+	float: left;
+	width: 100%;
+	height: 350px;
+	margin-bottom: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #fff;
+}
+.post-message #msgArea{
+	min-height: 200px;
+	min-width: 990px;
+	display: block;
+	width:990px;
+	height: 200px;
+	margin: 0 auto;
+	padding: 15px;
+	font-size: 20px;
+	position: relative;
+	top: 40px;
+}
+.btn-submit{
+	position: absolute;
+	height: 50px;
+	width: 100px;
+	text-align: center;
+	line-height: 50px;
+	bottom: 50px;
+	right: 30px;
+}
+
+
+

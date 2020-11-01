@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= require('html-loader!./layout/head-common.html')%>
+		<title><%= htmlWebpackPlugin.options.title%> - 商Mall城</title>
+		<script type="text/javascript">
+		function GetUrlPara()
+	　　{
+	　　　　var url = document.location.toString();
+	　　　　var arrUrl = url.split("orderNumber=");
+
+	　　　　var para = arrUrl[1];
+	　　　　return para;
+	　　}
+		function details(){
+			window.location.href="./order-detail.html?orderNumber="+GetUrlPara().toString();
+		}
+		</script>
+<body>
+	<%= require('html-loader!./layout/nav-simple.html')%>
+	<div class="page-wrap">
+		<div class="w">
+			<div class="result-con default-success">
+				<h1 class="result-title">恭喜您，操作成功！</h1>
+				<div class="result-content">
+					<a href="./index.html" class="link">返回首页</a>
+				</div>
+			</div>
+			<div class="result-con register-success">
+				<h1 class="result-title">恭喜您，注册成功！</h1>
+				<div class="result-content">
+					<a href="./index.html" class="link">返回首页</a>
+					<a href="./user-login.html" class="link">立即登录!</a>
+				</div>
+			</div>
+            <div class="result-con cart-add-success">
+                <h1 class="result-title">您的商品已成功加入购物车！</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">继续购物</a>
+                    <a class="link" href="./cart.html">去购物车查看</a>
+                </div>
+            </div>
+            <div class="result-con payment-success">
+                <h1 class="result-title">您的订单支付成功！</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">继续购物</a>
+                    <a class="link order-number" onclick="details()">查看该订单</a>
+                    <!--href="./order-detail.html?orderNumber="-->
+                </div>
+            </div>
+			<div class="result-con pass-reset-success">
+				<h1 class="result-title">恭喜您，密码重置成功！</h1>
+				<div class="result-content">
+					<a href="./index.html" class="link">返回首页</a>
+					<a href="./user-login.html" class="link">重新登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%= require('html-loader!./layout/footer.html')%>
+</body>
+</html>

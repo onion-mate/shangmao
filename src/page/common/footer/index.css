@@ -1,0 +1,49 @@
+body, button, input, select, textarea {
+    font: 12px Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+.footer-wrap{
+	height: 70px;
+	width: 100%;
+	background: #ebebeb;
+	position: absolute;
+	border-top: 1px solid #fff;
+	-moz-box-shadow: 0px -2px 10px 1px #777;
+    -webkit-box-shadow: 0px -2px 10px 1px #777;
+    box-shadow: 0px -2px 10px 1px #777;
+    min-width: 1080px;
+	max-width: 100%;
+    transition: all 0.2s ease-in-out;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=100, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000');
+}
+.w{
+	z-index: 10;
+	width: 1080px;
+	margin:0 auto;
+}
+.footer{
+	/* margin-top: 30px; */
+	width: 1080px;
+	height: 70px;
+	margin: 0 auto;
+	
+}
+.footer .links {
+	width: 1080px;
+	margin:0 auto;
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
+.footer .links .link {
+	padding: 0 10px;
+}
+.footer .copyright {
+	width: 1080px;
+	margin:0 auto;
+	text-align:center;
+	color: #f31100;
+	line-height:30px;
+}

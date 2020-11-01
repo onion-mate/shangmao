@@ -1,0 +1,13 @@
+<img id="head-img" src="http://img.evobly.com/img/{{headImage}}"/>
+<div class="leftInfo">
+	<span class="user unlogin">
+		<span class="link js-login">登录</span>
+		<span class="link js-register">注册</span>
+	</span>
+	<span class="user login">
+		<span class="link-text">欢迎，
+			<span class="username"></span>
+		</span>
+		<span class="link js-logout">注销</span>
+	</span>
+</div>

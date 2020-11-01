@@ -1,0 +1,33 @@
+<tr>
+    <th style="border-bottom:1px solid red;border-right:1px solid red;">发布者</th>
+    <th style="border-bottom:1px solid red;border-right:1px solid red;">标题</th>
+    <th style="border-bottom:1px solid red;">更新日期</th>
+</tr>
+{{#noticelist}}
+<tr>
+    <td width="20%" align="center" style="border-right:1px solid red;">{{username}}</td>
+    <td width="60%" style="border-right:1px solid red;">
+    	<a class="link" href="nt-detail.html?id={{id}}" target="_self">
+            <span style="font-weight:bold;text-indent:1.2em;display:inline-block;" class="cont-item" title="{{name}}">{{name}}</span>
+        </a>
+    </td>
+    <td width="20%" align="center">
+    	<a class="link" href="nt-detail.html?id={{id}}" target="_self">
+            <span title="{{update_time}}">{{update_time}}</span>
+        </a>
+    </td>
+</tr>
+{{/noticelist}}
+{{^noticelist}}
+	<div class="middle sec-loading">
+		<div class="loading2 ld1"></div>
+		<div class="loading2 ld2"></div>
+		<div class="loading2 ld3"></div>
+		<div class="loading2 ld4"></div>
+		<div class="loading2 ld5"></div>
+		<div class="loading2 ld6"></div>
+		<div class="loading2 ld7"></div>
+		<div class="loading2 ld8"></div>
+	</div>
+{{/noticelist}}
+

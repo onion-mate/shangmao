@@ -1,0 +1,29 @@
+{{#list}}
+    <li class="p-item">
+        <div class="p-img-con">
+            <a class="link" href="./detail.html?productId={{id}}" target="_blank">
+                <img class="p-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}" />
+            </a>
+        </div>
+        <div class="p-price-con">
+            <span class="p-price">￥{{price}}</span>
+        </div>
+        <div class="p-name-con">
+            <a class="p-name" href="./detail.html?productId={{id}}" target="_blank">{{name}}</a>
+        </div>
+    </li>
+{{/list}}
+{{^list}}
+    <div class="middle sec-loading">
+        <div class="loading2 ld1"></div>
+        <div class="loading2 ld2"></div>
+        <div class="loading2 ld3"></div>
+        <div class="loading2 ld4"></div>
+        <div class="loading2 ld5"></div>
+        <div class="loading2 ld6"></div>
+        <div class="loading2 ld7"></div>
+        <div class="loading2 ld8"></div>
+    </div>
+    <p class="err-tip">
+    啊哦~ 暂未找到相关商品，别失望哦，管理员正在努力的添加宝贝呢~   尽请期待！</p>
+{{/list}}

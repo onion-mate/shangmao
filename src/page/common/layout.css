@@ -1,0 +1,297 @@
+/*CSS reset*/
+body, button, input, select, textarea {
+    font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+
+}
+.page-wrap{
+	min-width: 1080px;
+	max-width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+/*body{
+	background: #f1f1f1;
+	font:12px/1.5 tahoma,arial,Microsoft YaHei,sans-serif;
+}*/
+li{
+	list-style: none;
+}
+img{
+	display: block;
+	border: none;
+}
+label{
+	cursor: pointer;
+	-moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+input[type='checkbox']{
+	cursor: pointer;
+}
+input{
+	cursor: pointer;
+	border-style: none;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(22,22,22,.3);
+	transition: all 0.35s ease-in-out;
+}
+input:hover{
+	border-radius: 8px;
+	-moz-box-shadow:  0 0 12px 1px rgba(33,66,255,0.8);
+    -webkit-box-shadow:  0 0 12px 1px rgba(33,66,255,0.8);
+    box-shadow: 0 0 12px 1px rgba(33,66,255,0.8);
+    transition: all 0.4s ease-in-out;
+}
+input:hover::after {
+  	opacity: 1;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+	border-radius: 8px;
+	-moz-box-shadow:  0 0 5px 1px rgba(33,66,255,0.8);
+    -webkit-box-shadow:  0 0 5px 1px rgba(33,66,255,0.8);
+    box-shadow: 0 0 5px 1px rgba(33,66,255,0.8);
+    transition: all 0.5s ease-in-out;
+}  
+
+/* webkit, opera, IE9 */
+*::selection { background:pink; }
+/* mozilla firefox */
+*::-moz-selection { background:pink; }/*</p> <p>*//* webkit, opera, IE9 */
+*::selection { background:pink; }
+/* mozilla firefox */
+*::-moz-selection { background:pink; }
+
+
+/*定宽布局*/
+.w{
+	width: 1080px;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+}
+/*panel*/
+.panel{
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.panel .panel-title{
+	padding: 10px; 
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+	padding: 10px;
+	overflow: hidden;
+}
+
+
+
+/*--------全局通用样式---------*/
+
+/*隐藏*/
+.hide{
+	display: none;
+}
+/*超链样式*/
+.link{
+	color: #333;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link:hover{
+	color:#e80012;
+}
+.link-text{
+	color: #999;
+	text-decoration: none;
+}
+/* 按钮样式 */
+.btn{
+	display: inline-block;
+	padding: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+	border-radius: 5px;
+	background: #55aaff;
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	-moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+	box-shadow: 0 0 180px 10px rgba(0,0,0,0);
+	transition: all 0.25s ease-in-out;
+}
+.btn:hover{
+	background:#c6d;
+	border-radius: 28px;
+	-moz-box-shadow:  0 0 6px 2px rgba(0,0,0,0.7);
+    -webkit-box-shadow:  0 0 6px 2px rgba(0,0,0,0.7);
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.7);
+    transition: all 0.45s ease-in-out;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.btn:active{
+	box-shadow: 0 0 400px 10px rgba(0,0,0,0);
+	transition: all 0.1s ease-in-out;
+}
+.btn:hover::after {
+  	opacity: 1;
+}                 
+.btn-mini {
+	height: 25px;
+	vertical-align: middle;
+	border-radius: 3px;
+	background: #c40022;
+	line-height: 25px;
+	font-size: 12px;
+	padding: 4px 8px;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	-moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.22);
+	transition: all 0.3s ease-in-out;
+}
+.btn-mini:hover{
+	border-radius: 25px;
+	-moz-box-shadow:  0 0 8px 1px rgba(0,0,0,0.7);
+    -webkit-box-shadow:  0 0 8px 1px rgba(0,0,0,0.7);
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.7);
+    transition: all 0.4s ease-in-out;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.btn-mini:hover::after {
+  	opacity: 1;
+}  
+/*阴影样式*/
+.shadow-default {
+    -moz-box-shadow: 1px 1px 5px 1px #000;
+    -webkit-box-shadow: 1px 1px 5px 1px #000;
+    box-shadow: 1px 1px 5px 1px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+
+
+
+/*loading*/
+
+
+.loading{
+	margin: 10px auto;
+	width: 32px;
+	height: 32px;
+	display: block;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	-moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+	-moz-box-shadow: 0 0 6px 2px #ddd;
+    -webkit-box-shadow: 0 0 6px 2px #ddd;
+    box-shadow: 0 0 6px 2px #ddd;
+    opacity: .9;
+	background: url(../../image/icon/loading/loading-015.gif) no-repeat;
+}
+
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.loading2{
+	width: 6px;
+	height: 60px;
+	/*background: white;*/
+	display: inline-block;
+	transform-origin:0 80px;
+	animation: loading 1.5s infinite;
+}
+.ld1{
+	animation-delay: 0.1s;
+}
+.ld2{
+	animation-delay: 0.2s;
+}
+.ld3{
+	animation-delay: 0.3s;
+}
+.ld4{
+	animation-delay: 0.4s;
+}
+.ld5{
+	animation-delay: 0.5s;
+}
+.ld6{
+	animation-delay: 0.6s;
+}
+.ld7{
+	animation-delay: 0.7s;
+}
+.ld8{
+	animation-delay: 0.8s;
+}
+@keyframes loading{
+	0%{
+		transform: scaleY(.1);
+		background: #eee;
+	}
+	25%{
+		background: rgb(100, 180, 255);
+	}
+	50%{
+		transform: scaleY(1);
+		background: rgb(100, 255, 180);
+	}
+	75%{
+		background: rgb(255, 100, 180);
+	}
+	100%{
+		transform: scaleY(0.1);
+		background: transparent;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

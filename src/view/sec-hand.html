@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= require('html-loader!./layout/head-common.html')%>
+		<title><%= htmlWebpackPlugin.options.title%> - 商Mall城 - 商学院自己的购物中心</title>
+	</head>
+<body>
+<div class="page-wrap">
+	<%= require('html-loader!./layout/nav.html')%>
+		<%= require('html-loader!./layout/header.html')%>
+		<div class="w-top">
+			<div class="w">
+				<div class="top-bar">
+					<div class="secLeftCont">
+					<i class="add-goods-img"></i>
+						<span class="tab-name">
+							发布闲置
+						</span>
+						<p class="cont">闲置换钱 快速出手</p>
+					</div>
+					<div class="secRightCont">
+					<i class="reCycle-img"></i>
+						<span class="tab-name">
+							我的闲置
+						</span>
+						<p class="cont">查看我的小金库</p>
+					</div>
+				</div>
+				<div class="infoBar">
+					<div class="left-item">
+						<span class="tab-name">
+						<i class="fa fa-tag"></i>
+							温馨小贴士：
+						</span>
+						<p class="cont">1.各位美女帅哥注意发布的闲置物品不得包含不健康内容，一经发现，将立刻给与下架商品或冻结账号相应权限。</p>
+						<p class="cont">2.此专区专门为校内同学老师们提供便捷的交易平台，请自觉遵守交易规范，诚信交易。</p>
+						<p class="cont">3.如遇问题，请联系<a href="mailto:postmaster@evobly.com?cc=1506658615@qq.com&subject=请填写邮件主题">postmaster@evobly.com</a>站内主管，举报或提出建议。</p>
+					</div>
+					<div class="right-item">
+						<span class="tab-name">
+							公告板
+							<a class="link tab-more" href="nt-detail.html?id=1" target="_blank">更多...</a>
+						</span>
+						<div class="info-list"></div>
+						<div class="pagination-notice"></div>
+					</div>
+				</div>
+				<h1 class="fl-title">最新发布</h1>
+					<ul class="sort-con">
+						<li class="sort-item sort-title-radius active" data-type="default">默认排序</li>
+						<li class="sort-item sort-item-radius" data-type="price">
+							<span>价格</span>
+							<i class="fa fa-sort-asc"></i>
+							<i class="fa fa-sort-desc"></i>
+						</li>
+					</ul>
+				<div class="goods-list"></div>
+				<div class="pagination-sec"></div>
+				<!--高速版-->
+				<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+				<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+				<script type="text/javascript">
+				window.changyan.api.config({
+				appid: 'cyuaVPWmr',
+				conf: 'prod_50c4fa2bed82006be72263af8dc0520f'
+				});
+				</script>
+				<div class="container">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+				</div>
+				<div class="container">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+				</div>
+				<div class="container">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+				</div>
+				<div class="container">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+				</div>
+				<div class="container">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+					<img src="http://img.evobly.com/img/e2974967-a038-4d10-b1a2-e4c7fa342c75.jpg">
+				</div>
+				<!-- <div class="loading"></div> -->
+			</div>
+		</div>
+		<div class="w-mid">
+			<div class="w">
+				<div class="middle sec-loading">
+					<div class="loading2 ld1"></div>
+					<div class="loading2 ld2"></div>
+					<div class="loading2 ld3"></div>
+					<div class="loading2 ld4"></div>
+					<div class="loading2 ld5"></div>
+					<div class="loading2 ld6"></div>
+					<div class="loading2 ld7"></div>
+					<div class="loading2 ld8"></div>
+				</div>
+			</div>
+		</div>
+	<%= require('html-loader!./layout/footer.html')%>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/*
+* @Author: Rosen
+* @Date:   2017-05-28 19:45:57
+* @Last Modified by:   Rosen
+* @Last Modified time: 2017-05-29 16:43:56
+*/
+.page-wrap{
+    min-width: 1080px;
+    max-width: 100%;
+}
+
+.page-wrap .w {
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(200,200,100,.1);
+    margin-top:30px;    
+    margin-bottom:30px; 
+    -moz-box-shadow:  0 0 15px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow:  0 0 15px 1px rgba(0,0,0,0.2);
+    box-shadow:  0 0 15px 1px rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out;
+    overflow: 
+}
+.page-wrap .w:hover{
+    background: rgba(100, 126, 200, 0.12);
+    -moz-box-shadow:  0 0 15px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow:  0 0 15px 1px rgba(0,0,0,0.6);
+    box-shadow:  0 0 15px 1px rgba(0,0,0,0.6);
+    transition: all 0.2s ease-in-out;
+}
+
+/*公告详情部分*/
+.page-wrap .w .detailCont{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 50px;
+}
+.detailCont .detail-item{
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+}
+.page-wrap .w .detailCont .d-title{
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    color: #431d5d;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* 商品详细信息 */
+.detail-wrap{
+    margin-top: 15px;
+}
+.detail-wrap .tab-list{
+    border-radius: 5px;
+    border-bottom-right-radius: 10px;
+    background: #eee;
+    border: 1px solid #333;
+    overflow: hidden;
+    border-bottom: 3px solid #c60023;
+}
+.detail-wrap .tab-list .tab-item{
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.detail-wrap .tab-list .tab-item.active{
+    background: #c60023;
+    color: #fff;
+}
+.detail-wrap .detail-con{
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin: 0 0 30px 0;
+    background: #fefefe;
+}
+.detail-wrap .detail-con img{
+    display: block;
+    margin: 0 auto;
+}
+
+/*公告列表部分*/
+.page-wrap .w .noticeCont{
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: #efe; 
+    z-index:100;
+}
+.noticeCont .notice-item{
+    width: 95%;
+    height: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+
+}
+.noticeCont .notice-item .cont{
+    height: 30px;
+    display: block;
+    font-size: 16px;
+    margin: 2px 0;
+}
+.notice-item .cont .cont-item{
+    width: 275px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 27px;
+}
+.noticeCont .notice-item .cont:hover{
+    cursor: pointer;
+}
+.noticeCont .notice-item .cont span:nth-child(1){
+    display: inline-block;
+    float: left;
+}
+.noticeCont .notice-item .cont span:nth-child(2){
+    display: inline-block;
+    float: right;
+}
+
+.sec-loading{
+/*  position: relative;
+    top:90px;*/
+}
+
+.pg-content{
+    position: relative;
+    top: -5px;
+}
+.detail-con .cont-img{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin:0 auto;
+    padding:10px 0px;
+}
+.label-img{
+    height: 40px;
+    line-height: 40px;
+    text-indent: .8em;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+    background: #aab5e8d1;
+    border-left: 5px solid red;
+}
+.detail-con .contArea{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+/* 错误信息 */
+.err-tip{
+    text-indent: 1.5em;
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
+}

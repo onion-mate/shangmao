@@ -1,0 +1,26 @@
+{{#messagelist}}
+	<div class="msg-item">
+        <div class="top">
+            <div class="m-left fl">
+            <span class="m-username">
+	            <i class="floor"></i> | {{username}}
+            </span>
+            </div>
+            <div class="m-right fr">日期：{{createTime}}</div>
+        </div>
+        <div class="content">{{content}}</div>
+    </div>
+{{/messagelist}}
+{{^messagelist}}
+	<div class="noInfo-title"><h1>暂无留言内容哦~</h1></div>
+	<div class="middle sec-loading">
+		<div class="loading2 ld1"></div>
+		<div class="loading2 ld2"></div>
+		<div class="loading2 ld3"></div>
+		<div class="loading2 ld4"></div>
+		<div class="loading2 ld5"></div>
+		<div class="loading2 ld6"></div>
+		<div class="loading2 ld7"></div>
+		<div class="loading2 ld8"></div>
+	</div>
+{{/messagelist}}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> - 商Mall城</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">S-Mall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+            <div class="panel">
+                <h1 class="panel-title">留言板</h1>
+                <div class="panel-body">
+                    <!--PC版-->
+                    <!--
+                    <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+                    <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+                    <script type="text/javascript">
+                    window.changyan.api.config({
+                    appid: 'cyuaVPWmr',
+                    conf: 'prod_50c4fa2bed82006be72263af8dc0520f'
+                    });
+                    </script>
+                    -->
+<!--                     <div class="msg-item">
+                        <div class="top">
+                            <div class="m-left fl"><i>1#</i> <span class="m-username">罗益</span></div>
+                            <div class="m-right fr">日期：2020年4月24日</div>
+                        </div>
+                        <div class="content">留言测试内容</div>
+                    </div> -->
+                </div>
+                <div class="pagination-message"></div>
+            </div>
+        <h1 class="post-title">发表留言</h1>
+            <div class="post-message">
+                <textarea name="content" id="msgArea"></textarea>
+                <div class="error-item">
+                    <i class="fa fa-minus-circle error-icon"></i>
+                    <p class="err-msg">Error Msg</p>
+                </div>
+            </div>
+            <span class="btn btn-submit" id="submit">发 表</span>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

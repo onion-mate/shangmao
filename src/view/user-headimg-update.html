@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= require('html-loader!./layout/head-common.html')%>
+		<title><%= htmlWebpackPlugin.options.title%> - 商Mall城</title>
+<body>
+	<%= require('html-loader!./layout/nav.html')%>
+	<%= require('html-loader!./layout/header.html')%>
+	<div class="crumb">
+		<div class="w">
+			<div class="crumb-con">
+				<a href="./index.html" class="link">S-Mall</a>
+				<span>></span>
+				<span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+			</div>
+		</div>
+	</div>
+	<div class="page-wrap w">
+			<%= require('html-loader!./layout/nav-side.html')%>
+			<div class="content with-nav">
+			<div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<!--<form class="avatar-form" action="upload-logo.php" enctype="multipart/form-data" method="post">-->
+					<form class="avatar-form" enctype="multipart/form-data">
+						<div class="modal-body">
+							<div class="avatar-body">
+								<div class="avatar-upload">
+									<input class="avatar-src" name="avatar_src" type="hidden">
+									<input class="avatar-data" name="avatar_data" type="hidden">
+									<button class="btn btn-danger"  type="button" style="height: 35px;" onClick="$('input[id=avatarInput]').click();">请选择图片</button>
+									<span id="avatar-name"></span>
+									<input class="avatar-input hide" style="display: none;" id="avatarInput" name="avatar_file" type="file"></div>
+								<div class="row">
+									<div class="col-md-9">
+										<div class="avatar-wrapper"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="avatar-preview preview-lg" id="imageHead"></div>
+										<!--<div class="avatar-preview preview-md"></div>
+								<div class="avatar-preview preview-sm"></div>-->
+									</div>
+								</div>
+								<!--
+								<div class="user_pic" style="display: block;">
+									<img src="" style="display: inline-block;float: right;margin: 20px;" />
+								</div>-->
+								<div class="row avatar-btns">
+									<div class="col-md-4">
+										<div class="btn-group">
+											<button class="btn btn-danger fa fa-undo" data-method="rotate" data-option="-90" type="button" title="Rotate -90 degrees"> 向左旋转</button>
+										</div>
+										<div class="btn-group">
+											<button class="btn  btn-danger fa fa-repeat" data-method="rotate" data-option="90" type="button" title="Rotate 90 degrees"> 向右旋转</button>
+										</div>
+									</div>
+									<div class="col-md-5" style="text-align: right;">								
+										<button class="btn btn-danger fa fa-arrows" data-method="setDragMode" data-option="move" type="button" title="移动">
+							            <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="$().cropper(&quot;setDragMode&quot;, &quot;move&quot;)">
+							            </span>
+							          </button>
+							          <button type="button" class="btn btn-danger fa fa-search-plus" data-method="zoom" data-option="0.1" title="放大图片">
+							            <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="$().cropper(&quot;zoom&quot;, 0.1)">
+							              <!--<span class="fa fa-search-plus"></span>-->
+							            </span>
+							          </button>
+							          <button type="button" class="btn btn-danger fa fa-search-minus" data-method="zoom" data-option="-0.1" title="缩小图片">
+							            <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="$().cropper(&quot;zoom&quot;, -0.1)">
+							              <!--<span class="fa fa-search-minus"></span>-->
+							            </span>
+							          </button>
+							          <button type="button" class="btn btn-danger fa fa-refresh" data-method="reset" title="重置图片">
+								            <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="$().cropper(&quot;reset&quot;)" aria-describedby="tooltip866214">
+								       </button>
+							        </div>
+									<div class="col-md-3">
+										<button class="btn btn-danger btn-block avatar-save fa fa-save" type="button" data-dismiss="modal"> 保存修改</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.0/jquery.js"></script>
+		<!--<div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>-->
+		<script type="text/javascript">
+		//做个下简易的验证  大小 格式 
+
+			
+
+		</script>
+			</div>
+			
+		<!--
+			<div class="content with-nav">
+				<div class="panel">
+				<div class="panel-title">修改用户头像</div>
+				<div class="panel-body">
+					<div class="user-info">
+						<div class="form-line">
+							<span class="label">原 密 码:</span>
+							<input type="password" class="input" id="password" autocomplete="off"/>
+						</div>
+						<div class="form-line">
+							<span class="label">新 密 码:</span>
+							<input type="password" class="input" id="password-new" autocomplete="off"/>
+						</div>
+						<div class="form-line">
+							<span class="label">确认密码:</span>
+							<input type="password" class="input" id="password-confirm" autocomplete="off"/>
+						</div>
+					<a class="btn btn-submit">提 交</a>
+					</div>
+					</div>	
+				</div>
+			</div> -->
+	</div>
+	<%= require('html-loader!./layout/footer.html')%>
+</body>
+</html>

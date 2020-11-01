@@ -1,0 +1,227 @@
+/*body, button, input, select, textarea {
+    font: 12px Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}*/
+/*通用头部导航*/
+.header{
+	width: 100%;
+    background: rgba(141, 221, 224, 0.58);
+	background: url(../../../image/banner/search_banner02.jpg) no-repeat;
+    background-size:cover;
+	min-width: 1080px;
+	max-width: 100%;
+	-moz-box-shadow: 0 3px 5px 1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 3px 5px 1px rgba(0,0,0,.3);
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,.3);
+    transition: all 0.2s ease-in-out;
+}
+.header .w{
+    background: url(../../../image/header/logo-banner.png) no-repeat -15px 20px;
+    border-radius: 8px;
+	margin: 0 auto;
+	width: 1080px;
+	overflow: hidden;
+}
+.header .logo{
+    position: absolute;
+    border-radius: 15px;
+    padding: 0 10px;
+    left: 419px;
+    top: 33px;
+    display: block;
+    font-size: 36px;
+    color: #fff1cbeb;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+.header .logo:hover{
+    color: #8cfbff;
+    background: #cf6f6f6b;
+    -moz-box-shadow: 0 0px 10px 5px rgba(253, 121, 121, 0.58);
+    -webkit-box-shadow: 0 0px 10px 5px rgba(253, 121, 121, 0.58);
+    box-shadow: 0 0px 10px 5px rgba(253, 121, 121, 0.58);
+    transition: all 0.5s ease-in-out;
+}
+.header .tips{
+    background:rgba(43, 42, 42, 0.63);
+    border-radius: 8px;
+    padding: 0px 5px;
+    position: absolute;
+    left: 734px;
+    top: 89px;
+    display: block;
+    font-size: 15px;
+    color: #00ffe7;
+    font-weight: bold;
+}
+.header .secondHandArea{
+    background:rgba(43, 42, 42, 0.63);
+    border-radius: 8px;
+    padding: 0px 5px;
+    position: absolute;
+    left: 645px;
+    top: 88px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ffe7;
+    animation: changeshadow 1s  ease-in  infinite ;
+    /* 其它浏览器兼容性前缀 */
+    -webkit-animation: changeshadow 1s linear infinite;
+    -moz-animation: changeshadow 1s linear infinite;
+    -ms-animation: changeshadow 1s linear infinite;
+    -o-animation: changeshadow 1s linear infinite;
+}
+
+@keyframes changeshadow {  
+    0%{ text-shadow: 0 0 4px #72ffc4fa}  
+    50%{ text-shadow: 0 0 40px #ff0000}  
+    100%{ text-shadow: 0 0 4px #00ffe7}  
+}
+/* 添加兼容性前缀 */
+@-webkit-keyframes changeshadow {
+    0%{ text-shadow: 0 0 4px #72ffc4fa}  
+    50%{ text-shadow: 0 0 40px #ff0000}  
+    100%{ text-shadow: 0 0 4px #00ffe7} 
+}
+@-moz-keyframes changeshadow {
+    0%{ text-shadow: 0 0 4px #72ffc4fa}  
+    50%{ text-shadow: 0 0 40px #ff0000}  
+    100%{ text-shadow: 0 0 4px #00ffe7}  
+}
+@-ms-keyframes changeshadow {
+    0%{ text-shadow: 0 0 4px #72ffc4fa}  
+    50%{ text-shadow: 0 0 40px #ff0000}  
+    100%{ text-shadow: 0 0 4px #00ffe7}  
+}
+@-o-keyframes changeshadow {
+    0%{ text-shadow: 0 0 4px #72ffc4fa}  
+    50%{ text-shadow: 0 0 40px #ff0000}  
+    100%{ text-shadow: 0 0 4px #00ffe7}   
+}
+
+.header .search-con{
+	padding: 39px 0;
+    /* margin: 0 auto; */
+    width: 400px;
+    float: right;
+    /*
+    -moz-box-shadow: 0 3px 10px 1px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 3px 10px 1px rgba(0,0,0,.4);
+    box-shadow: 0 3px 10px 1px rgba(0,0,0,.4);*/
+    transition: all 0.2s ease-in-out;
+}
+
+/*面包蟹导航*/
+.crumb{
+	/* margin-bottom: 10px; */
+	height: 35px;
+	min-width: 1080px;
+	max-width: 100%;
+	background: rgba(245, 40, 97, 0.3);
+	-moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+    min-width: 1080px;
+	max-width: 100%;
+	border-top:1px solid #aaa;
+	-moz-box-shadow: 0 3px 5px 1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 3px 5px 1px rgba(0,0,0,.3);
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,.3);
+    transition: all 0.2s ease-in-out;
+}
+.crumb .w{
+	height: 35px;
+	width: 1080px;
+	line-height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.crumb .link-text{
+	color: #666;
+}
+.header .search-con .search-input {
+    width: 260px;
+    height: 35px;
+    line-height: 37px;
+    font-size: 15px;
+    text-indent: 1.2em;
+    border-radius: 3px;
+    border: 1px solid #c60023;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.12);
+    transition: all 0.2s ease-in-out;
+}
+/* .header .search-con .search-input::after {
+     content: '';
+     position: absolute;
+     z-index: -1;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     border-radius: 5px;
+     box-shadow: 0 5px 20px rgba(0,0,0,1);
+     transition: opacity 0.5s ease-in-out;
+   }   */   
+.header .search-con .search-input:active{
+	/* transform: scale(1, 1); */
+    box-shadow: 0 0 10px 1px rgba(239, 84, 84, 0.68);
+    transition: all 0.2s ease-in-out;
+	width: 240px;
+}  
+.header .search-con .search-input:active::after {
+  	opacity: 1;
+}                 
+.header .search-con .search-input-actived{/* 
+	-moz-box-shadow: 1px 1px 20px 1px #555;
+    -webkit-box-shadow: 1px 1px 20px 1px #555;
+    box-shadow: 1px 1px 20px 1px #555; */
+    box-shadow: 0 0 10px 1px rgba(239, 84, 84, 0.68);
+    transition: all 0.2s ease-in-out;
+	width: 240px;
+}
+/* .header .search-con .search-input-actived::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            box-shadow: 0 0 5px 1px rgba(0,0,0,0.12);
+            transition: opacity 0.2s ease-in-out;
+          }   */          
+.header .search-con .search-btn{
+    position: relative;
+    left: -10px;
+    top: -2px;
+    height: 37px;
+    line-height: 37px;
+    width: 85px;
+    border: none;
+    background: #c60023;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.header .search-con .search-btn:hover{
+	-moz-box-shadow: 2px 1px 6px 1px #222;
+    -webkit-box-shadow: 2px 1px 6px 1px #222;
+    box-shadow: 2px 1px 6px 1px #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+

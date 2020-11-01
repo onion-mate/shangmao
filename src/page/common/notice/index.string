@@ -1,0 +1,22 @@
+{{#noticelist}}
+<p class="cont">
+    <a class="link" href="nt-detail.html?id={{id}}" target="_blank">
+    	<img src="http://img.evobly.com/img/{{mainImage}}" class="cont-img"/>
+	        <span class="cont-title" title="{{name}}">{{name}}</span>
+	        <span class="cont-time" title="{{update_time}}">{{update_time}}</span>
+    </a>
+</p>
+{{/noticelist}}
+{{^noticelist}}
+	<div class="middle sec-loading">
+		<div class="loading2 ld1"></div>
+		<div class="loading2 ld2"></div>
+		<div class="loading2 ld3"></div>
+		<div class="loading2 ld4"></div>
+		<div class="loading2 ld5"></div>
+		<div class="loading2 ld6"></div>
+		<div class="loading2 ld7"></div>
+		<div class="loading2 ld8"></div>
+	</div>
+{{/noticelist}}
+

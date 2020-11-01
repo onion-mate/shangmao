@@ -1,0 +1,55 @@
+/*
+* @Author: Rosen
+* @Date:   2017-06-10 20:05:24
+* @Last Modified by:   Rosen
+* @Last Modified time: 2017-06-10 20:26:03
+*/
+
+.page-wrap{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 50px 0 50px 0;
+    background: #fff;
+}
+.payment-tips{
+    position: relative;
+    top:-10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+}
+.payment-tips.enhance{
+    color: #c60023;
+}
+.img-con{
+    position: relative;
+    width: 279px;
+    height: 490px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.img-con .qr-filter{
+    width: 280px;
+    height: 490px;
+}
+.img-con .qr-code{
+    position:relative;
+    margin: 0 auto;
+    top:-280px;
+    width: 170px;
+    height: 170px;
+}
+.alipay_logo{
+    display: block;
+    border: none;
+    width: 135px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}

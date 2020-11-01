@@ -1,0 +1,7 @@
+<img src="../../image/banner/alipay.gif" class="alipay_logo">
+<p class="payment-tips">好样的！订单提交成功，请尽快支付！定单号：{{orderNo}}</p>
+<p class="payment-tips enhance">请使用支付宝App扫描二维码进行支付：</p>
+<div class="img-con">
+    <img class="qr-filter" src="../../image/icon/alipay_filter.png" alt="请用支付宝扫码支付" title="请用支付宝扫码支付"/>
+    <img class="qr-code" src="{{qrUrl}}" alt="请用支付宝扫码支付" title="请用支付宝扫码支付"/>
+</div>
